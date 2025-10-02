@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ParallelSearchSuite" parallel="methods" thread-count="4">
+
+    <parameter name="browser" value="chrome"/> 
+
+    <test name="SearchEngineTests">
+        <classes>
+            <class name="com.gaurav.parallelrunusingguice.GoogleSearchTest"/> 
+           <!--<class name="com.gaurav.parallelrunusingguice.BingSearchTest"/>-->
+        </classes>
+    </test>
+</suite>
